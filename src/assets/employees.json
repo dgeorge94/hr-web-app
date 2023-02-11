@@ -1,0 +1,25 @@
+[{
+    "firstName": "John",
+    "lastName": "Doe",
+    "tNumber": "T00000001",
+    "employmentStatus": "Terminated",
+    "employmentDates": "10/11/2020 - 12/20/2021",
+    "salary":20000,
+    "DOB":"5/12/1983",
+    "SSN":"111-11-1111"
+    
+
+},
+
+{
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "tNumber": "T00000002",
+    "employmentStatus": "Active",
+    "employmentDates": "10/11/2020 - ",
+    "salary":25000,
+    "DOB":"06/05/1990",
+    "SSN":"111-11-1112"
+    
+}
+]
