@@ -1,30 +1,42 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <div class="main-div-search">
+    <form (ngSubmit)="searchOnSubmit(f)" #f="ngForm">
     <mat-card class="center-container-search">
-        <mat-card-header>
-           
-            <h2 class="search-h2">Employee Search</h2>
-            
-        </mat-card-header>
-        
-            <mat-form-field class="example-form">
-                <mat-label>First Name</mat-label>
-                
-                <input matInput type="input" id="fName" name="fName">
-            </mat-form-field>
-            <mat-form-field class="example-form">
-                <mat-label>Last Name</mat-label>
-                
-                <input matInput type="text" id="lName" name="lName">
-            </mat-form-field>
-            <mat-form-field class="example-form">
-                <mat-label>T-Number</mat-label>
-                
-                <input matInput type="text" id="tNum" name="tNum">
-            </mat-form-field>
-        <button mat-raised-button color="primary" class="login-button"><h1 class="small-h1">SEARCH</h1></button>
+            <mat-card-header>
+                <h2 class="search-h2">Employee Search</h2>
+            </mat-card-header>
+                <mat-form-field class="example-form">
+                    <mat-label>First Name</mat-label>
+                    <input matInput 
+                        type="input" 
+                        id="fName" 
+                        ngModel 
+                        name="fName"
+                        >
+                </mat-form-field>
+                <mat-form-field class="example-form">
+                    <mat-label>Last Name</mat-label>
+                    <input matInput 
+                        type="text" 
+                        id="lName" 
+                        ngModel 
+                        name="lName">
+                </mat-form-field>
+                <mat-form-field class="example-form">
+                    <mat-label>T-Number</mat-label>
+                    <input matInput 
+                        type="text" 
+                        id="tNum" 
+                        ngModel 
+                        name="tNum">
+                </mat-form-field>
+            <button mat-raised-button 
+                color="primary" 
+                class="login-button">
+                <h1 class="small-h1">SEARCH</h1></button>
     </mat-card>
+    </form>
 </div>
 
 

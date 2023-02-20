@@ -501,6 +501,14 @@ $altTheme: (
 }
 }
 
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #105a51 inset !important;
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .main-div {
@@ -526,6 +534,16 @@ $altTheme: (
     }
   }
 
+  @media only screen and (max-width: 700px) {
+    .results-container {
+      width: 100%;
+      max-width: 530px;
+    }
+    .results-card {
+      width: 100%;
+      max-width: 530px;
+    }
+  }
 
 
 }

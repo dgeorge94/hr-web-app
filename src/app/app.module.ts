@@ -13,6 +13,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HttpHandler, HttpClient } from '@angular/common/http';
 import { ApiService } from './api.service';
+import { AutocompleteOffDirective } from './autocomplete-off.directive';
 
 
 
@@ -24,7 +25,8 @@ import { ApiService } from './api.service';
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    AutocompleteOffDirective
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
+import { AutocompleteOffDirective } from '../autocomplete-off.directive';
 
 @Component({
     selector: 'search',
@@ -7,4 +9,8 @@ import { Component } from '@angular/core';
 
 export class SearchComponent{
     
+    searchOnSubmit(form: NgForm) {
+        console.log(form);
+
+    }
 }
